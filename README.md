@@ -1,27 +1,55 @@
-# Deco Start — deco.cx template
- 
-Welcome to your [deco.cx](https://deco.cx) site!
+# Orgulho Tech Site
 
-This repository was created for you when you created a new site. To edit the
-code of the components in this site, you may clone this repo and run the project
-locally.
+Site da comunidade Orgulho Tech, construído com Deco, Fresh e Deno.
 
----
+## Requisitos
 
-NOTE: To edit or create new pages with existing components, you don't need to
-edit the code! Just go to any page and hit `.` to open the editor of
-the current page you're seeing.
+- Deno
 
----
-## Usage
-
-Start the project:
+## Desenvolvimento local
 
 ```sh
-deno task start
+deno task dev
 ```
 
-Navigate to `https://localhost:8000` to see your site and start creating new
-components.
+Abra `http://localhost:8000`.
 
+## Comandos úteis
+
+```sh
+deno task preview
+deno task build
+deno task export:vercel
+```
+
+## Testes
+
+Testes rápidos de estrutura:
+
+```sh
+deno task test:meetup
+deno task test:newsletter
+```
+
+Testes de integração (upstream do Google Script):
+
+```sh
+deno task test:meetup:integration
+deno task test:newsletter:integration
+```
+
+Pipeline de pré deploy:
+
+```sh
+deno task test:predeploy
+```
+
+## Deploy (Vercel)
+
+O build da Vercel executa:
+
+1. `deno task test:predeploy`
+2. `deno task export:vercel`
+
+Saída estática em `dist/`.
 
