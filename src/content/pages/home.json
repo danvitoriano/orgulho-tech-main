@@ -1,0 +1,66 @@
+{
+  "path": "/",
+  "sections": [
+    {
+      "type": "Header",
+      "props": {
+        "navigation": {
+          "links": [],
+          "buttons": []
+        }
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {}
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "links": [
+          {
+            "title": "Conheca mais",
+            "items": [
+              {
+                "label": "Meetup",
+                "href": "https://www.meetup.com/pt-BR/orgulhotech"
+              },
+              {
+                "label": "Podcast Tech 40+",
+                "href": "https://www.youtube.com/playlist?list=PLndJnupfcnxE4dErxRpXICLXQ2Xz5UduD"
+              },
+              {
+                "label": "Dan Vitoriano",
+                "href": "https://www.danvitoriano.com.br/"
+              }
+            ]
+          }
+        ],
+        "bottomLinks": [],
+        "social": [
+          {
+            "network": "Instagram",
+            "href": "https://www.instagram.com/orgulhotech"
+          },
+          {
+            "network": "Linkedin",
+            "href": "https://www.linkedin.com/company/orgulhotech"
+          },
+          {
+            "network": "Youtube",
+            "href": "https://youtube.com/playlist?list=PLndJnupfcnxFNZv1pt7Umj6UUUKcPxfHk&si=fGMpxoascUfFKVkb"
+          }
+        ],
+        "subscribe": {
+          "title": "Receba nossa Newsletter",
+          "description": "Fique por dentro de todos eventos e promocoes da comunidade Orgulho Tech.",
+          "instructions": "<p>Prometemos nao fazer spam!</p>"
+        },
+        "logo": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511",
+          "alt": "Orgulho Tech"
+        }
+      }
+    }
+  ]
+}
