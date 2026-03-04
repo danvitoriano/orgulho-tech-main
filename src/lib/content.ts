@@ -1,7 +1,9 @@
 import home from "@/content/pages/home.json";
 
+export type SectionType = "Header" | "MeetupMainHero" | "Hero" | "Testimonials" | "Footer";
+
 export type SectionConfig = {
-  type: "Header" | "Hero" | "Footer";
+  type: SectionType;
   props?: Record<string, unknown>;
 };
 

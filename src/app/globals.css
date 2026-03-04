@@ -1,1 +1,3 @@
-/* Intentionally empty: styles are served from /public/styles.css (dist output). */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
