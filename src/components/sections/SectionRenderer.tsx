@@ -3,10 +3,14 @@ import type { ComponentType } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
+import MeetupMainHero from "./MeetupMainHero";
+import Testimonials from "./Testimonials";
 
 const SECTION_MAP = {
   Header,
+  MeetupMainHero,
   Hero,
+  Testimonials,
   Footer,
 } as const;
 

@@ -2,43 +2,23 @@
 
 import { useMemo, useRef } from "react";
 
-type Slide = {
+export type Slide = {
   description: string;
   avatar: string;
   name: string;
 };
 
-const slides: Slide[] = [
-  {
-    description: "comprei meu ingresso pra @orgulhotech. quem mais vai? ANSIOSA",
-    avatar:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/563ce337-6f5b-48fd-8a65-ecbda7a2ec81",
-    name: "@okarinadantas",
-  },
-  {
-    description: "Todas as #pessoas de #tecnologia estão convidadas! 🏳️‍🌈🏳️‍⚧️ ",
-    avatar:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/56373669-4a7c-4f74-9d26-62e6054b8e2f",
-    name: "@jonasnonato",
-  },
-  {
-    description: "Cheguei aqui pelo TikTok. Estou maravilhado. Adoro gente inteligente!",
-    avatar:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/e638aa60-ebe1-4276-890d-cf009d2d0cc9",
-    name: "@robsoncavalcanti5161",
-  },
-  {
-    description:
-      "Nossa gente,ver esse podcast foi meio que foi o ponta pé final que eu precisava pra eu decidir se entrava ou não no mundo da programação",
-    avatar:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/cd5b3c4a-4b68-4f4c-9c15-13438dc7e5d3",
-    name: "@BrummelGamer",
-  },
-];
+export interface TestimonialsProps {
+  title?: string;
+  slides?: Slide[];
+}
 
-export default function Testimonials() {
+export default function Testimonials({
+  title,
+  slides = [],
+}: TestimonialsProps) {
   const sliderRef = useRef<HTMLUListElement>(null);
-  const dotIds = useMemo(() => slides.map((_, index) => `dot-${index}`), []);
+  const dotIds = useMemo(() => slides.map((_, index) => `dot-${index}`), [slides]);
 
   const scrollToIndex = (index: number) => {
     const slider = sliderRef.current;
@@ -74,9 +54,11 @@ export default function Testimonials() {
 
   return (
     <section className="min-h-min flex flex-col lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28">
-      <h2 className="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">
-        Depoimentos da nossa comunidade
-      </h2>
+      {title && (
+        <h2 className="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">
+          {title}
+        </h2>
+      )}
       <ul
         ref={sliderRef}
         data-slider
@@ -102,7 +84,6 @@ export default function Testimonials() {
                   />
                   <div className="flex flex-col">
                     <p className="font-semibold text-base">{slide.name}</p>
-                    <p className="text-base"></p>
                   </div>
                 </div>
               </div>
