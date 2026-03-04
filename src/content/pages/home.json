@@ -25,15 +25,23 @@
       "props": {
         "badge": "WOMAN & QUEER TECH",
         "title": "Meetup Woman & Queer",
-        "description": "No mês internacional das mulheres, vamos reunir as comunidades Orgulho Tech, Devs 40+ e Elas Programam em São Paulo, com participação presencial na Blip, em São Paulo, e transmissão online. Dia 19/3 (quinta), a partir das 19h.",
+        "description": "No mês internacional das mulheres, vamos reunir as comunidades Orgulho Tech, Devs 40+ e Elas Programam em São Paulo, com participação presencial na Blip. Dia 19/3 (quinta), a partir das 19h.",
         "tags": [
           "19/3 (quinta), a partir das 19h",
-          "Na Blip, em São Paulo + transmissão online"
+          "Na Blip, em São Paulo"
         ],
-        "cta": {
-          "href": "/meetup",
-          "text": "Saiba mais e receba aviso"
-        },
+        "ctas": [
+          {
+            "href": "https://www.meetup.com/pt-br/orgulhotech/events/313611019/",
+            "text": "Confirmar presença",
+            "outline": false
+          },
+          {
+            "href": "/meetup",
+            "text": "Saiba mais",
+            "outline": true
+          }
+        ],
         "image": {
           "src": "/women-queer-tech-hero.png",
           "alt": "Meetup Woman and Queer"

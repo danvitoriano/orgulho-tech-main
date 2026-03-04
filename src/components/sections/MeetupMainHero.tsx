@@ -7,6 +7,11 @@ export interface MeetupMainHeroProps {
     href: string;
     text: string;
   };
+  ctas?: {
+    href: string;
+    text: string;
+    outline?: boolean;
+  }[];
   image?: {
     src: string;
     alt: string;
@@ -19,8 +24,10 @@ export default function MeetupMainHero({
   description,
   tags = [],
   cta,
+  ctas,
   image,
 }: MeetupMainHeroProps) {
+  const allCtas = ctas ?? (cta ? [{ ...cta, outline: false }] : []);
   return (
     <section className="lg:container md:max-w-6xl lg:mx-auto mx-4 pt-10 lg:pt-14">
       <div className="rounded-[2rem] overflow-hidden border border-secondary bg-[#fff7eb]">
@@ -53,11 +60,19 @@ export default function MeetupMainHero({
                 ))}
               </div>
             )}
-            {cta && (
-              <div className="mt-8">
-                <a href={cta.href} className="btn btn-primary">
-                  {cta.text}
-                </a>
+            {allCtas.length > 0 && (
+              <div className="mt-8 flex flex-wrap gap-3">
+                {allCtas.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.href}
+                    className={item.outline ? "btn btn-outline btn-primary" : "btn btn-primary"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.text}
+                  </a>
+                ))}
               </div>
             )}
           </div>
