@@ -164,57 +164,52 @@ export default function Footer({
           </div>
           <div className="lg:w-[40%]">
             <h4 className="font-semibold mb-4">{subscribe?.title}</h4>
-            <p className="font-normal">{subscribe.description}</p>
-            <div className="flex gap-4">
-              <form
-                id="newsletter-form-element"
-                action={newsletterScriptUrl}
-                method="POST"
-                onSubmit={handleSubmit}
-              >
-                <input type="hidden" name="source" value="newsletter_rodape" />
-                <input type="hidden" name="scriptUrl" value={newsletterScriptUrl} />
-                <input
-                  type="hidden"
-                  name="successMessage"
-                  value="E-mail cadastrado com sucesso na newsletter."
-                />
-                <input
-                  type="hidden"
-                  name="errorMessage"
-                  value="Não foi possível cadastrar seu e-mail agora. Tente novamente."
-                />
+            <p className="font-normal mb-4">{subscribe.description}</p>
+            <form
+              id="newsletter-form-element"
+              action={newsletterScriptUrl}
+              method="POST"
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="source" value="newsletter_rodape" />
+              <input type="hidden" name="scriptUrl" value={newsletterScriptUrl} />
+              <input
+                type="hidden"
+                name="successMessage"
+                value="E-mail cadastrado com sucesso na newsletter."
+              />
+              <input
+                type="hidden"
+                name="errorMessage"
+                value="Não foi possível cadastrar seu e-mail agora. Tente novamente."
+              />
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
                   name="email"
                   id="newsletter-email"
                   placeholder="Digite seu e-mail"
-                  className="w-full input input-bordered input-primary"
+                  className="input input-bordered input-primary flex-1"
                   required
                 />
                 <button
                   id="newsletter-submit-button"
-                  className="btn btn-outline font-normal"
+                  className="btn btn-outline font-normal whitespace-nowrap"
                   aria-label="Subscribe"
                   disabled={isSubmitting}
                 >
-                  Receba nossa newsletter
+                  Inscrever-se
                 </button>
+              </div>
+              {statusHtml && (
                 <div
-                  id="newsletter-status"
-                  className="hidden mt-2"
-                  aria-live="polite"
+                  className="mt-2"
+                  dangerouslySetInnerHTML={{ __html: statusHtml }}
                 />
-                {statusHtml && (
-                  <div
-                    className="mt-2"
-                    dangerouslySetInnerHTML={{ __html: statusHtml }}
-                  />
-                )}
-              </form>
-            </div>
+              )}
+            </form>
             <p
-              className="text-xs"
+              className="text-xs mt-3"
               dangerouslySetInnerHTML={{ __html: subscribe.instructions }}
             />
           </div>
