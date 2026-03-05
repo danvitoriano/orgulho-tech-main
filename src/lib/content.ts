@@ -5,7 +5,7 @@ import meetup from "@/content/pages/meetup.json";
 import podcast from "@/content/pages/podcast.json";
 import sobre from "@/content/pages/sobre.json";
 
-export type SectionType = "Header" | "MeetupMainHero" | "Hero" | "Testimonials" | "Footer" | "EventDetails";
+export type SectionType = "Header" | "MeetupMainHero" | "Hero" | "Testimonials" | "Footer" | "EventDetails" | "CompanySupport";
 
 export type SectionConfig = {
   type: SectionType;

@@ -1,148 +1,134 @@
+import Image from "next/image";
+
+export interface ProgramItem {
+  time: string;
+  title: string;
+  description?: string;
+}
+
+export interface EventLocation {
+  name: string;
+  address: string;
+  mapsUrl: string;
+}
+
+export interface EventCTA {
+  href: string;
+  text: string;
+  outline?: boolean;
+}
+
 export interface EventDetailsProps {
   title?: string;
   image?: string;
   description?: string;
+  program?: ProgramItem[];
+  location?: EventLocation;
   meta?: string[];
-  program?: {
-    time?: string;
-    title: string;
-    description?: string;
-  }[];
-  speakers?: {
-    name: string;
-    role?: string;
-  }[];
-  location?: {
-    name: string;
-    address: string;
-    mapsUrl?: string;
-  };
-  ctas?: {
-    href: string;
-    text: string;
-    outline?: boolean;
-  }[];
+  ctas?: EventCTA[];
 }
 
 export default function EventDetails({
   title,
   image,
   description,
-  meta = [],
   program = [],
-  speakers = [],
   location,
+  meta = [],
   ctas = [],
 }: EventDetailsProps) {
   return (
-    <section className="lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-16">
-      {(title || image) && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12">
-          {title && (
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
-              {title}
-            </h1>
-          )}
+    <section className="lg:container md:max-w-6xl lg:mx-auto mx-4 py-16 lg:py-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        {/* Left column */}
+        <div>
           {image && (
-            <img
-              src={image}
-              alt={title ?? ""}
-              className="w-full rounded-2xl object-cover max-h-80 lg:max-h-96"
-              loading="eager"
-            />
+            <div className="rounded-2xl overflow-hidden mb-8">
+              <Image
+                src={image}
+                alt={title ?? "Evento"}
+                width={600}
+                height={400}
+                className="w-full object-cover"
+              />
+            </div>
+          )}
+
+          {meta.length > 0 && (
+            <ul className="flex flex-col gap-1 mb-6">
+              {meta.map((item) => (
+                <li key={item} className="text-sm font-medium text-primary">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {title && (
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-4">{title}</h2>
+          )}
+
+          {description && (
+            <p className="text-base lg:text-lg mb-8">{description}</p>
+          )}
+
+          {ctas.length > 0 && (
+            <div className="flex flex-col sm:flex-row gap-3">
+              {ctas.map((cta) => (
+                <a
+                  key={cta.href}
+                  href={cta.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`btn ${cta.outline ? "btn-outline btn-primary" : "btn-primary"}`}
+                >
+                  {cta.text}
+                </a>
+              ))}
+            </div>
           )}
         </div>
-      )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <div className="lg:col-span-2 space-y-10">
-          {description && (
-            <div>
-              <h2 className="text-2xl font-semibold mb-3">Sobre o evento</h2>
-              <p className="text-lg leading-relaxed">{description}</p>
-            </div>
-          )}
-
+        {/* Right column */}
+        <div>
           {program.length > 0 && (
-            <div>
-              <h2 className="text-2xl font-semibold mb-5">Programação</h2>
-              <ol className="space-y-4">
-                {program.map((item, index) => (
-                  <li key={index} className="flex gap-4">
-                    {item.time && (
-                      <span className="shrink-0 font-mono text-sm font-semibold w-14 pt-1 text-gray-500">
-                        {item.time}
-                      </span>
-                    )}
+            <div className="mb-8">
+              <h3 className="text-sm font-bold tracking-widest text-primary uppercase mb-6">
+                Programação
+              </h3>
+              <ul className="flex flex-col gap-4">
+                {program.map((item, i) => (
+                  <li key={i} className="flex gap-4 items-start">
+                    <span className="text-sm font-mono text-primary min-w-[48px]">
+                      {item.time}
+                    </span>
                     <div>
-                      <p className="font-semibold">{item.title}</p>
+                      <p className="font-medium">{item.title}</p>
                       {item.description && (
-                        <p className="text-sm text-gray-600 mt-0.5">{item.description}</p>
+                        <p className="text-sm opacity-70">{item.description}</p>
                       )}
                     </div>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          )}
-
-          {speakers.length > 0 && (
-            <div>
-              <h2 className="text-2xl font-semibold mb-5">Palestrantes</h2>
-              <ul className="space-y-3">
-                {speakers.map((speaker, index) => (
-                  <li key={index}>
-                    <p className="font-semibold">{speaker.name}</p>
-                    {speaker.role && (
-                      <p className="text-sm text-gray-600">{speaker.role}</p>
-                    )}
                   </li>
                 ))}
               </ul>
             </div>
           )}
-        </div>
-
-        <div className="space-y-6">
-          {meta.length > 0 && (
-            <div className="rounded-2xl border border-gray-200 p-6 space-y-1">
-              {meta.map((item, index) => (
-                <p key={index} className="text-sm font-medium">{item}</p>
-              ))}
-            </div>
-          )}
 
           {location && (
-            <div className="rounded-2xl border border-gray-200 p-6">
-              <h2 className="text-lg font-semibold mb-2">Local</h2>
-              <p className="font-medium">{location.name}</p>
-              <p className="text-sm text-gray-600 mt-1">{location.address}</p>
-              {location.mapsUrl && (
-                <a
-                  href={location.mapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-3 text-sm font-medium underline underline-offset-2"
-                >
-                  Ver no mapa
-                </a>
-              )}
-            </div>
-          )}
-
-          {ctas.length > 0 && (
-            <div className="flex flex-col gap-3">
-              {ctas.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`btn btn-primary w-full ${item.outline ? "btn-outline" : ""}`}
-                >
-                  {item.text}
-                </a>
-              ))}
+            <div className="rounded-2xl bg-base-200 p-6">
+              <h3 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">
+                Local
+              </h3>
+              <p className="font-semibold mb-1">{location.name}</p>
+              <p className="text-sm mb-4">{location.address}</p>
+              <a
+                href={location.mapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-sm btn-outline btn-primary"
+              >
+                Ver no mapa
+              </a>
             </div>
           )}
         </div>

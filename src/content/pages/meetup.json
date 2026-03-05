@@ -57,6 +57,41 @@
       }
     },
     {
+      "type": "CompanySupport",
+      "props": {
+        "title": "Sua empresa quer apoiar?",
+        "description": "Estamos em busca de parceiros que queiram marcar presença num evento que fala diretamente com mulheres e pessoas LGBTQIAPN+ na tecnologia.",
+        "stats": [
+          { "value": "3", "label": "comunidades idealizadoras" },
+          { "value": "200k+", "label": "conexões nas redes sociais" },
+          { "value": "20+", "label": "anos de atuação combinados" }
+        ],
+        "options": [
+          {
+            "title": "Coffee Break",
+            "description": "Patrocine o coffee break e leve sua marca até as mãos de quem está construindo o futuro da tecnologia."
+          },
+          {
+            "title": "Brindes",
+            "description": "Presenteie as participantes com produtos da sua empresa e crie uma lembrança positiva da sua marca."
+          }
+        ],
+        "mediaKit": "Solicite o mídia kit completo dos próximos eventos — incluindo Orgulho Tech Conf e Conferência Devs 40+ — e saiba como posicionar sua marca em toda a programação de 2026.",
+        "contacts": [
+          {
+            "name": "Dan Vitoriano",
+            "email": "contato@danvitoriano.com.br",
+            "website": "orgulhotech.com.br"
+          },
+          {
+            "name": "Silvia Coelho",
+            "email": "contato@elasprogramam.com.br",
+            "website": "elasprogramam.com.br"
+          }
+        ]
+      }
+    },
+    {
       "type": "Footer",
       "props": {
         "logo": {
