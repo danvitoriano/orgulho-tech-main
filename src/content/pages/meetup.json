@@ -1,0 +1,126 @@
+{
+  "path": "/meetup",
+  "sections": [
+    {
+      "type": "Header",
+      "props": {
+        "logo": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511",
+          "alt": "Orgulho Tech"
+        },
+        "navigation": {
+          "links": [
+            { "label": "Sobre", "url": "/sobre" },
+            { "label": "Meetup", "url": "/meetup" },
+            { "label": "Podcast", "url": "/podcast" },
+            { "label": "Conf", "url": "/conf" },
+            { "label": "GitHub", "url": "/github" }
+          ],
+          "buttons": []
+        }
+      }
+    },
+    {
+      "type": "EventDetails",
+      "props": {
+        "title": "Meetup Woman & Queer Tech",
+        "image": "/women-queer-tech-hero.png",
+        "description": "Reunimos as comunidades Orgulho Tech, Devs 40+ e Elas Programam para uma conversa honesta sobre trajetórias, desafios e resiliência na tecnologia.",
+        "program": [
+          { "time": "19h00", "title": "Abertura e boas-vindas" },
+          { "time": "19h15", "title": "Palestra", "description": "Silvia Coelho — Elas Programam" },
+          { "time": "19h45", "title": "Palestra", "description": "Dan Vitoriano — Orgulho Tech e Devs 40+" },
+          { "time": "20h15", "title": "Perguntas e debate aberto" },
+          { "time": "21h00", "title": "Encerramento" }
+        ],
+        "location": {
+          "name": "Blip",
+          "address": "Avenida Brigadeiro Faria Lima, 4221 — São Paulo, SP",
+          "mapsUrl": "https://maps.google.com/?q=Avenida+Brigadeiro+Faria+Lima,+4221,+São+Paulo,+SP"
+        },
+        "meta": [
+          "19 de março (quinta), 19h–21h",
+          "Vagas limitadas — 60 pessoas"
+        ],
+        "ctas": [
+          {
+            "href": "https://www.meetup.com/pt-br/orgulhotech/events/313611019/",
+            "text": "Confirmar presença no Meetup",
+            "outline": false
+          },
+          {
+            "href": "https://www.meetup.com/pt-br/orgulhotech/",
+            "text": "Entrar no grupo",
+            "outline": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "CompanySupport",
+      "props": {
+        "title": "Sua empresa quer apoiar?",
+        "description": "Estamos em busca de parceiros que queiram marcar presença num evento que fala diretamente com mulheres e pessoas LGBTQIAPN+ na tecnologia.",
+        "stats": [
+          { "value": "3", "label": "comunidades idealizadoras" },
+          { "value": "200k+", "label": "conexões nas redes sociais" },
+          { "value": "20+", "label": "anos de atuação combinados" }
+        ],
+        "options": [
+          {
+            "title": "Coffee Break",
+            "description": "Patrocine o coffee break e leve sua marca até as mãos de quem está construindo o futuro da tecnologia."
+          },
+          {
+            "title": "Brindes",
+            "description": "Presenteie as participantes com produtos da sua empresa e crie uma lembrança positiva da sua marca."
+          }
+        ],
+        "mediaKit": "Solicite o mídia kit completo dos próximos eventos — incluindo Orgulho Tech Conf e Conferência Devs 40+ — e saiba como posicionar sua marca em toda a programação de 2026.",
+        "contacts": [
+          {
+            "name": "Dan Vitoriano",
+            "email": "contato@danvitoriano.com.br",
+            "website": "orgulhotech.com.br"
+          },
+          {
+            "name": "Silvia Coelho",
+            "email": "contato@elasprogramam.com.br",
+            "website": "elasprogramam.com.br"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "logo": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511",
+          "alt": "Orgulho Tech"
+        },
+        "links": [
+          {
+            "title": "Conheça mais",
+            "items": [
+              { "label": "Meetup", "href": "https://www.meetup.com/pt-BR/orgulhotech" },
+              { "label": "Podcast Tech 40+", "href": "https://www.youtube.com/playlist?list=PLndJnupfcnxE4dErxRpXICLXQ2Xz5UduD" },
+              { "label": "Dan Vitoriano", "href": "https://www.danvitoriano.com.br/" }
+            ]
+          }
+        ],
+        "bottomLinks": [],
+        "copyright": "© 2026 Orgulho Tech. Todos os direitos reservados.",
+        "social": [
+          { "network": "Instagram", "href": "https://www.instagram.com/orgulhotech" },
+          { "network": "Linkedin", "href": "https://www.linkedin.com/company/orgulhotech" },
+          { "network": "Youtube", "href": "https://youtube.com/playlist?list=PLndJnupfcnxFNZv1pt7Umj6UUUKcPxfHk&si=fGMpxoascUfFKVkb" }
+        ],
+        "subscribe": {
+          "title": "Receba nossa Newsletter",
+          "description": "Fique por dentro de todos eventos e promoções da comunidade Orgulho Tech.",
+          "instructions": "Prometemos não fazer spam!"
+        }
+      }
+    }
+  ]
+}

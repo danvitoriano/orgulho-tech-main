@@ -1,23 +1,32 @@
+import SectionRenderer from "@/components/sections/SectionRenderer";
+import { getAllPagePaths, getPageByPath } from "@/lib/content";
 import { notFound } from "next/navigation";
-import { getDistPageByPath, getDistRoutes } from "@/lib/distPages";
 
 export const generateStaticParams = () =>
-  getDistRoutes().map((route) => ({
-    slug: route.slice(1).split("/"),
-  }));
+  getAllPagePaths()
+    .filter((path) => path !== "/")
+    .map((path) => ({
+      slug: path.slice(1).split("/"),
+    }));
 
-export default async function DistPage({
+export default async function SlugPage({
   params,
 }: {
   params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
   const route = `/${slug.join("/")}`;
-  const page = getDistPageByPath(route);
+  const page = getPageByPath(route);
 
   if (!page) {
     notFound();
   }
 
-  return <div dangerouslySetInnerHTML={{ __html: page.body }} />;
+  return (
+    <main>
+      {page.sections.map((section, index) => (
+        <SectionRenderer key={`${section.type}-${index}`} section={section} />
+      ))}
+    </main>
+  );
 }

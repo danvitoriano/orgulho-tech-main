@@ -1,5 +1,7 @@
 import type { SectionConfig } from "@/lib/content";
 import type { ComponentType } from "react";
+import CompanySupport from "./CompanySupport";
+import EventDetails from "./EventDetails";
 import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
@@ -12,6 +14,8 @@ const SECTION_MAP = {
   Hero,
   Testimonials,
   Footer,
+  EventDetails,
+  CompanySupport,
 } as const;
 
 export default function SectionRenderer({ section }: { section: SectionConfig }) {
