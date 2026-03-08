@@ -18,7 +18,7 @@ export default function RootLayout({
         <meta name="view-transition" content="same-origin" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased" suppressHydrationWarning>{children}</body>
     </html>
   );
 }

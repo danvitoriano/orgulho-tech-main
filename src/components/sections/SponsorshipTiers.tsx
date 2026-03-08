@@ -1,7 +1,7 @@
 export interface Tier {
   emoji: string;
   title: string;
-  priceRange: string;
+  includesPrevious?: string;
   benefits: string[];
 }
 
@@ -33,47 +33,66 @@ export default function SponsorshipTiers({
   contacts = [],
 }: SponsorshipTiersProps) {
   return (
-    <section className="lg:container md:max-w-6xl lg:mx-auto mx-4 py-16 lg:py-24">
-      <div className="mb-12">
-        {badge && (
-          <span className="badge badge-primary badge-lg mb-6">{badge}</span>
-        )}
+    <section>
+      {/* Hero header — fundo gradiente full-width */}
+      <div className="bg-gradient-to-br from-violet-700 via-fuchsia-600 to-pink-500 text-white py-20 lg:py-32 relative overflow-hidden">
+        {/* Decoração de fundo */}
+        <div className="absolute inset-0 pointer-events-none select-none" aria-hidden>
+          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-white/10 blur-3xl" />
+        </div>
 
-        {meta.length > 0 && (
-          <ul className="flex flex-col gap-1 mb-6">
-            {meta.map((item) => (
-              <li key={item} className="text-sm font-medium text-primary">
-                {item}
-              </li>
-            ))}
-          </ul>
-        )}
+        <div className="lg:container md:max-w-6xl lg:mx-auto mx-4 relative z-10">
+          {badge && (
+            <span className="inline-block border border-white/50 text-white text-sm font-medium px-4 py-1 rounded-full mb-8">{badge}</span>
+          )}
 
-        {title && (
-          <h2 className="text-3xl lg:text-4xl font-semibold mb-4">{title}</h2>
-        )}
+          {title && (
+            <h2 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+              {title}
+            </h2>
+          )}
 
-        {description && (
-          <p className="text-base lg:text-lg mb-8 max-w-2xl">{description}</p>
-        )}
+          {meta.length > 0 && (
+            <ul className="flex flex-col gap-2 mb-8">
+              {meta.map((item) => (
+                <li key={item} className="text-base font-medium opacity-90">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          )}
 
-        {ctas.length > 0 && (
-          <div className="flex flex-col sm:flex-row gap-3">
-            {ctas.map((cta) => (
-              <a
-                key={cta.href}
-                href={cta.href}
-                target={cta.href.startsWith("mailto") ? undefined : "_blank"}
-                rel="noreferrer"
-                className={`btn ${cta.outline ? "btn-outline btn-primary" : "btn-primary"}`}
-              >
-                {cta.text}
-              </a>
-            ))}
-          </div>
-        )}
+          {description && (
+            <p className="text-lg lg:text-xl mb-10 max-w-2xl opacity-90 leading-relaxed">
+              {description}
+            </p>
+          )}
+
+          {ctas.length > 0 && (
+            <div className="flex flex-col sm:flex-row gap-3">
+              {ctas.map((cta) => (
+                <a
+                  key={cta.href}
+                  href={cta.href}
+                  target={cta.href.startsWith("mailto") ? undefined : "_blank"}
+                  rel="noreferrer"
+                  className={`btn btn-lg ${
+                    cta.outline
+                      ? "btn-outline border-white text-white hover:bg-white/10"
+                      : "bg-white text-violet-700 border-white hover:bg-white/90"
+                  }`}
+                >
+                  {cta.text}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
+      {/* Tiers e contatos — container normal */}
+      <div className="lg:container md:max-w-6xl lg:mx-auto mx-4 py-16 lg:py-24">
       {tiers.length > 0 && (
         <div className="mb-10">
           <h3 className="text-sm font-bold tracking-widest text-primary uppercase mb-6">
@@ -85,17 +104,19 @@ export default function SponsorshipTiers({
                 key={tier.title}
                 className="rounded-2xl border border-primary/30 p-8"
               >
-                <div className="flex items-center gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-4">
                   <span className="text-2xl">{tier.emoji}</span>
                   <h4 className="text-xl font-bold">{tier.title}</h4>
                 </div>
-                <p className="text-primary font-semibold mb-4">
-                  {tier.priceRange}
-                </p>
+                {tier.includesPrevious && (
+                  <p className="text-xs font-medium text-primary/70 uppercase tracking-wider mb-4 pb-4 border-b border-primary/20">
+                    + todos os benefícios {tier.includesPrevious}
+                  </p>
+                )}
                 <ul className="flex flex-col gap-2">
                   {tier.benefits.map((benefit, i) => (
                     <li key={i} className="text-sm flex items-start gap-2">
-                      <span className="text-primary mt-0.5">✓</span>
+                      <span className="text-primary mt-0.5">—</span>
                       <span>{benefit}</span>
                     </li>
                   ))}
@@ -122,7 +143,7 @@ export default function SponsorshipTiers({
                 href={contact.href}
                 target={contact.href.startsWith("mailto") ? undefined : "_blank"}
                 rel="noreferrer"
-                className={`btn ${contact.outline ? "btn-outline" : "btn-outline"}`}
+                className="btn btn-outline"
               >
                 {contact.label}
               </a>
@@ -130,6 +151,7 @@ export default function SponsorshipTiers({
           </div>
         </div>
       )}
+      </div>
     </section>
   );
 }

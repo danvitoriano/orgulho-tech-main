@@ -36,7 +36,6 @@
         "badge": "Próxima edição",
         "meta": [
           "📅 Quarta-feira, 3 de junho de 2026",
-          "🕖 19h – 22h",
           "📍 São Paulo, SP (local a confirmar)",
           "👥 300 a 400 pessoas esperadas",
           "🏳️‍🌈 Véspera da Parada do Orgulho LGBT+ de SP"
@@ -56,48 +55,47 @@
         ],
         "tiers": [
           {
-            "emoji": "🏆",
-            "title": "Platinum",
-            "priceRange": "R$ 30.000 – R$ 50.000",
+            "emoji": "🥉",
+            "title": "Bronze",
             "benefits": [
-              "Nome no título do evento",
-              "Talk exclusivo na programação",
-              "Estande no evento",
-              "10 ingressos VIP",
-              "Vídeo institucional no evento"
-            ]
-          },
-          {
-            "emoji": "🥇",
-            "title": "Gold",
-            "priceRange": "R$ 18.000 – R$ 30.000",
-            "benefits": [
-              "Logo em destaque no site",
-              "Logo em destaque no palco",
-              "Menção nas redes sociais"
+              "Logo no material gráfico",
+              "2 ingressos"
             ]
           },
           {
             "emoji": "🥈",
             "title": "Silver",
-            "priceRange": "R$ 8.000 – R$ 15.000",
+            "includesPrevious": "Bronze",
             "benefits": [
-              "Logo no site e nos posts",
+              "Logo no site e posts",
               "Material no credenciamento",
               "4 ingressos"
             ]
           },
           {
-            "emoji": "🥉",
-            "title": "Bronze",
-            "priceRange": "R$ 3.000 – R$ 7.500",
+            "emoji": "🥇",
+            "title": "Gold",
+            "includesPrevious": "Silver",
             "benefits": [
-              "Logo no material gráfico",
-              "2 ingressos"
+              "Logo em destaque no palco",
+              "Menção nas redes sociais",
+              "6 ingressos"
+            ]
+          },
+          {
+            "emoji": "🏆",
+            "title": "Platinum",
+            "includesPrevious": "Gold",
+            "benefits": [
+              "Estande no evento",
+              "Talk exclusivo na programação",
+              "Nome no título do evento",
+              "Vídeo institucional no evento",
+              "10 ingressos"
             ]
           }
         ],
-        "note": "Ativações à la carte disponíveis: Sponsor de Wi-Fi, Photo Wall, Food & Drink e área VIP — a partir de R$ 1.200.",
+        "note": "Ativações à la carte disponíveis: Sponsor de Wi-Fi, Photo Wall, Food & Drink e área VIP.",
         "contacts": [
           {
             "label": "contato@orgulhotech.com.br",
@@ -149,61 +147,77 @@
           "12h – 21h",
           "Liberdade, São Paulo"
         ],
+        "hosts": ["Dan Vitoriano", "Léo Sobral"],
+        "videoUrl": "https://www.youtube.com/embed/MPRh_AoFmeA",
         "speakers": [
-          "Céu Serikawa Balzano",
-          "Keila Almeida",
-          "Edilson Moura",
-          "Renato Paixão",
-          "Nathally Souza",
-          "Simara Conceição",
-          "Matheus Fernandes",
-          "Francesco Vassoler Crisci"
+          { "name": "Nathally Souza", "company": "Nubank", "talk": "Role de sexta: da ideia ao deploy funcional em 12 horas" },
+          { "name": "Keila Almeida", "company": "Logos Edtech", "talk": "Inclusão e Inovação: O Poder Transformador da Tecnologia nas Comunidades LGBTQIAPN+" },
+          { "name": "Guilherme Silveira", "company": "Alura", "talk": "Arte Simbiótica: Processos Criativos com IA" },
+          { "name": "Scar Luz", "company": "Thoughtworks", "talk": "Entendendo os nossos Gaps Técnicos" },
+          { "name": "Damiana Nascimento", "company": "FIAP", "talk": "A evolução da carreira em tecnologia: Minha jornada e lições aprendidas" },
+          { "name": "Tamara Domenichelli", "company": "F1rst Santander" },
+          { "name": "Geociano Souto", "company": "Thoughtworks", "talk": "Culturas orientam carreiras LGBTQIAPN+" },
+          { "name": "Camilla Crispim", "company": "Thoughtworks", "talk": "Modernização de Software: O Essencial" },
+          { "name": "Renato Paixão", "company": "PretUX", "talk": "Como planejar, criar e avaliar seu MVP" },
+          { "name": "Luis Leão", "company": "Twilio", "talk": "Real ou Fake: os desafios e possibilidades da IA Generativa" },
+          { "name": "Hérika Strongreen", "company": "Accenture", "talk": "Carreira Tech em Segurança da Informação" },
+          { "name": "Theo Dirk", "company": "Alelo", "talk": "Transição de Carreira e Trans na Tecnologia" },
+          { "name": "Simara Conceição", "company": "Thoughtworks", "talk": "Do you speak Generative AI Multimodal?" }
         ],
+        "panels": [
+          {
+            "activity": "Treinamento para Profissionais LGBT",
+            "participants": [
+              { "name": "Raul Anhezini", "company": "LinkedIn" },
+              { "name": "Edilson Moura", "company": "LinkedIn" }
+            ]
+          },
+          {
+            "activity": "Painel: Construção de produtos de forma enxuta",
+            "participants": [
+              { "name": "Laura Araujo", "company": "SumUp" },
+              { "name": "Guilherme de Paula", "company": "Grupo Boticário" },
+              { "name": "Renato Paixão", "company": "PretUX" }
+            ]
+          },
+          {
+            "activity": "Painel: Quebrando Barreiras — Carreira e Desafios na Tecnologia",
+            "participants": [
+              { "name": "Barbara Meneguzzi", "company": "Cielo" },
+              { "name": "Francesco Crisci", "company": "Cielo" },
+              { "name": "Matheus Silva", "company": "Cielo" }
+            ]
+          },
+          {
+            "activity": "Painel: IA, segurança, diversidade e inclusão",
+            "participants": [
+              { "name": "Rafa Mores", "company": "ELU" },
+              { "name": "Céu Balzano", "company": "Cultsec" },
+              { "name": "Gabriela Augusto", "company": "Cultsec" }
+            ]
+          }
+        ],
+        "partners": {
+          "title": "Parceiras Oficiais e Apoiadoras",
+          "description": "Organizações que patrocinaram e apoiaram a diversidade na tecnologia, contribuindo de diversas maneiras com o evento e a comunidade.",
+          "names": [
+            "FIAP",
+            "Alura",
+            "Cielo",
+            "Twilio",
+            "Michael Page",
+            "Reply",
+            "Sensedia",
+            "Trampos",
+            "Fórum de Empresas e Direitos LGBTI+",
+            "Criativos",
+            "Laboratoria",
+            "ELU Inovação"
+          ]
+        },
         "location": {
           "name": "Liberdade, São Paulo"
         }
-      }
-    },
-    {
-      "type": "Testimonials",
-      "props": {
-        "title": "O que a comunidade disse",
-        "slides": [
-          {
-            "description": "Comprei meu ingresso pra @orgulhotech — quem mais vai? ANSIOSA!",
-            "name": "@okarinadantas",
-            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
-          },
-          {
-            "description": "Todas as pessoas de tecnologia estão convidadas!",
-            "name": "@jonasnonato",
-            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
-          },
-          {
-            "description": "Cheguei aqui pelo TikTok. Estou maravilhado. Adoro gente inteligente!",
-            "name": "@robsoncavalcanti5161",
-            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
-          },
-          {
-            "description": "Ver esse podcast foi meio que o pontapé final que eu precisava pra decidir entrar no mundo da programação.",
-            "name": "@BrummelGamer",
-            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
-          }
-        ]
-      }
-    },
-    {
-      "type": "CompanySupport",
-      "props": {
-        "title": "Organização",
-        "description": "O Orgulho Tech Conf é realizado por Dan Vitoriano e Silvia Coelho, via FullCircle.",
-        "contacts": [
-          {
-            "name": "Dan Vitoriano",
-            "email": "contato@orgulhotech.com.br",
-            "website": "orgulhotech.com.br"
-          }
-        ]
       }
     },
     {
