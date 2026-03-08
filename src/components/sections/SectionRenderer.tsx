@@ -1,11 +1,14 @@
 import type { SectionConfig } from "@/lib/content";
 import type { ComponentType } from "react";
+import BulletSection from "./BulletSection";
 import CompanySupport from "./CompanySupport";
+import ConfRetro from "./ConfRetro";
 import EventDetails from "./EventDetails";
 import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import MeetupMainHero from "./MeetupMainHero";
+import SponsorshipTiers from "./SponsorshipTiers";
 import Testimonials from "./Testimonials";
 
 const SECTION_MAP = {
@@ -16,6 +19,9 @@ const SECTION_MAP = {
   Footer,
   EventDetails,
   CompanySupport,
+  SponsorshipTiers,
+  ConfRetro,
+  BulletSection,
 } as const;
 
 export default function SectionRenderer({ section }: { section: SectionConfig }) {

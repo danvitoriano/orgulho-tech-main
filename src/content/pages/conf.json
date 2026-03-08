@@ -24,10 +24,186 @@
       "type": "Hero",
       "props": {
         "title": "<p><strong>Orgulho Tech Conf</strong></p>",
-        "description": "A conferência anual da comunidade Orgulho Tech, celebrando diversidade e inovação na tecnologia com palestras, workshops e muita conexão.",
+        "description": "A maior conferência de profissionais LGBTQ+ na tecnologia no Brasil. Um espaço seguro e acolhedor para compartilhar experiências, inspirar trajetórias e impulsionar a presença da comunidade tech em toda a indústria.",
         "placement": "left",
         "titleSize": "heading",
         "cta": []
+      }
+    },
+    {
+      "type": "SponsorshipTiers",
+      "props": {
+        "badge": "Próxima edição",
+        "meta": [
+          "📅 Quarta-feira, 3 de junho de 2026",
+          "🕖 19h – 22h",
+          "📍 São Paulo, SP (local a confirmar)",
+          "👥 300 a 400 pessoas esperadas",
+          "🏳️‍🌈 Véspera da Parada do Orgulho LGBT+ de SP"
+        ],
+        "title": "Edição 2026",
+        "description": "A segunda edição do Orgulho Tech Conf acontece na véspera do feriado e da maior Parada do Orgulho LGBT+ do mundo. Seja patrocinador e posicione sua marca ao lado da comunidade tech LGBTQ+ do Brasil.",
+        "ctas": [
+          {
+            "href": "mailto:contato@orgulhotech.com.br",
+            "text": "Quero patrocinar"
+          },
+          {
+            "href": "https://www.instagram.com/orgulhotech",
+            "text": "Fique por dentro",
+            "outline": true
+          }
+        ],
+        "tiers": [
+          {
+            "emoji": "🏆",
+            "title": "Platinum",
+            "priceRange": "R$ 30.000 – R$ 50.000",
+            "benefits": [
+              "Nome no título do evento",
+              "Talk exclusivo na programação",
+              "Estande no evento",
+              "10 ingressos VIP",
+              "Vídeo institucional no evento"
+            ]
+          },
+          {
+            "emoji": "🥇",
+            "title": "Gold",
+            "priceRange": "R$ 18.000 – R$ 30.000",
+            "benefits": [
+              "Logo em destaque no site",
+              "Logo em destaque no palco",
+              "Menção nas redes sociais"
+            ]
+          },
+          {
+            "emoji": "🥈",
+            "title": "Silver",
+            "priceRange": "R$ 8.000 – R$ 15.000",
+            "benefits": [
+              "Logo no site e nos posts",
+              "Material no credenciamento",
+              "4 ingressos"
+            ]
+          },
+          {
+            "emoji": "🥉",
+            "title": "Bronze",
+            "priceRange": "R$ 3.000 – R$ 7.500",
+            "benefits": [
+              "Logo no material gráfico",
+              "2 ingressos"
+            ]
+          }
+        ],
+        "note": "Ativações à la carte disponíveis: Sponsor de Wi-Fi, Photo Wall, Food & Drink e área VIP — a partir de R$ 1.200.",
+        "contacts": [
+          {
+            "label": "contato@orgulhotech.com.br",
+            "href": "mailto:contato@orgulhotech.com.br"
+          },
+          {
+            "label": "WhatsApp +55 11 94821-2672",
+            "href": "https://wa.me/5511948212672"
+          }
+        ]
+      }
+    },
+    {
+      "type": "BulletSection",
+      "props": {
+        "title": "O que entregamos aos patrocinadores",
+        "items": [
+          "Marca exposta antes, durante e depois do evento",
+          "Público engajado com perfil tech",
+          "Fotos e vídeos oficiais com logo da marca",
+          "Divulgação nas redes sociais e assessoria de imprensa",
+          "Possibilidade de ativação presencial",
+          "Relatório pós-evento com métricas de impressões e engajamento",
+          "Networking exclusivo com público e convidados"
+        ]
+      }
+    },
+    {
+      "type": "BulletSection",
+      "props": {
+        "title": "Público-alvo",
+        "items": [
+          "Pessoas LGBTQ+ atuantes ou interessadas em tecnologia",
+          "Profissionais de desenvolvimento, design, dados e engenharia",
+          "Recrutadores e líderes de empresas",
+          "Estudantes da área de tecnologia",
+          "Comunidades e aliados da diversidade"
+        ]
+      }
+    },
+    {
+      "type": "ConfRetro",
+      "props": {
+        "badge": "1ª Edição",
+        "title": "Orgulho Tech Conf 2024",
+        "description": "A primeira conferência de profissionais LGBTQ+ na tecnologia no Brasil.",
+        "meta": [
+          "Sábado, 1 de junho de 2024",
+          "12h – 21h",
+          "Liberdade, São Paulo"
+        ],
+        "speakers": [
+          "Céu Serikawa Balzano",
+          "Keila Almeida",
+          "Edilson Moura",
+          "Renato Paixão",
+          "Nathally Souza",
+          "Simara Conceição",
+          "Matheus Fernandes",
+          "Francesco Vassoler Crisci"
+        ],
+        "location": {
+          "name": "Liberdade, São Paulo"
+        }
+      }
+    },
+    {
+      "type": "Testimonials",
+      "props": {
+        "title": "O que a comunidade disse",
+        "slides": [
+          {
+            "description": "Comprei meu ingresso pra @orgulhotech — quem mais vai? ANSIOSA!",
+            "name": "@okarinadantas",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
+          },
+          {
+            "description": "Todas as pessoas de tecnologia estão convidadas!",
+            "name": "@jonasnonato",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
+          },
+          {
+            "description": "Cheguei aqui pelo TikTok. Estou maravilhado. Adoro gente inteligente!",
+            "name": "@robsoncavalcanti5161",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
+          },
+          {
+            "description": "Ver esse podcast foi meio que o pontapé final que eu precisava pra decidir entrar no mundo da programação.",
+            "name": "@BrummelGamer",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/c1589049-ca9f-44ee-a336-d52606bb7511"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CompanySupport",
+      "props": {
+        "title": "Organização",
+        "description": "O Orgulho Tech Conf é realizado por Dan Vitoriano e Silvia Coelho, via FullCircle.",
+        "contacts": [
+          {
+            "name": "Dan Vitoriano",
+            "email": "contato@orgulhotech.com.br",
+            "website": "orgulhotech.com.br"
+          }
+        ]
       }
     },
     {
