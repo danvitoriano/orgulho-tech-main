@@ -1,5 +1,9 @@
 {
   "path": "/conf",
+  "metadata": {
+    "title": "Conf — Orgulho Tech",
+    "description": "A maior conferência de profissionais LGBTQ+ na tecnologia no Brasil. Um espaço seguro e acolhedor para compartilhar experiências e impulsionar a presença da comunidade tech."
+  },
   "sections": [
     {
       "type": "Header",
