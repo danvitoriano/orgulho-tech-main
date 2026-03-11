@@ -1,5 +1,9 @@
 {
   "path": "/meetup",
+  "metadata": {
+    "title": "Meetup — Orgulho Tech",
+    "description": "Meetup Woman & Queer Tech — Reunimos as comunidades Orgulho Tech, Devs 40+ e Elas Programam. 19 de março, na Blip, São Paulo."
+  },
   "sections": [
     {
       "type": "Header",

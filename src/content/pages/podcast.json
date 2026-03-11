@@ -1,5 +1,9 @@
 {
   "path": "/podcast",
+  "metadata": {
+    "title": "Podcast — Orgulho Tech",
+    "description": "Episódios sobre tecnologia, diversidade e inclusão. Ouça histórias inspiradoras de pessoas LGBT+ que estão transformando a indústria de tecnologia."
+  },
   "sections": [
     {
       "type": "Header",

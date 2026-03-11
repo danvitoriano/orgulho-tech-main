@@ -12,8 +12,14 @@ export type SectionConfig = {
   props?: Record<string, unknown>;
 };
 
+export type PageMetadata = {
+  title?: string;
+  description?: string;
+};
+
 export type PageConfig = {
   path: string;
+  metadata?: PageMetadata;
   sections: SectionConfig[];
 };
 

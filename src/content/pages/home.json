@@ -1,5 +1,9 @@
 {
   "path": "/",
+  "metadata": {
+    "title": "Orgulho Tech — Comunidade LGBT+ na Tecnologia",
+    "description": "Comunidade que celebra a diversidade na tecnologia, com meetups, podcast e conferência para pessoas LGBT+ e aliadas."
+  },
   "sections": [
     {
       "type": "Header",

@@ -1,5 +1,9 @@
 {
   "path": "/sobre",
+  "metadata": {
+    "title": "Sobre — Orgulho Tech",
+    "description": "O Orgulho Tech é uma comunidade que celebra a diversidade na tecnologia, reunindo pessoas LGBT+ e aliadas para trocar experiências e construir uma indústria mais inclusiva."
+  },
   "sections": [
     {
       "type": "Header",

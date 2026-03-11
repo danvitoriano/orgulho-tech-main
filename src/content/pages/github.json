@@ -1,5 +1,9 @@
 {
   "path": "/github",
+  "metadata": {
+    "title": "GitHub — Orgulho Tech",
+    "description": "Conheça nossos projetos open source. Contribua com a comunidade e ajude a construir ferramentas que promovem diversidade na tecnologia."
+  },
   "sections": [
     {
       "type": "Header",
