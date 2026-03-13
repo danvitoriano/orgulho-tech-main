@@ -42,6 +42,20 @@
       }
     },
     {
+      "type": "BulletSection",
+      "props": {
+        "title": "Próxima edição ao vivo",
+        "description": "Segunda-feira, 15 de março às 19h30 — ao vivo da Blip, em São Paulo.",
+        "items": [
+          "Nova edição do Podcast Orgulho Tech gravada ao vivo",
+          "Data: segunda-feira, 15 de março de 2026",
+          "Horário: 19h30",
+          "Local: Blip — São Paulo, SP",
+          "Link para assistir: em breve"
+        ]
+      }
+    },
+    {
       "type": "Footer",
       "props": {
         "logo": {
