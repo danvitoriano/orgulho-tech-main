@@ -10,6 +10,7 @@ import Hero from "./Hero";
 import MeetupMainHero from "./MeetupMainHero";
 import SponsorshipTiers from "./SponsorshipTiers";
 import Testimonials from "./Testimonials";
+import YouTubeEmbed from "./YouTubeEmbed";
 
 const SECTION_MAP = {
   Header,
@@ -22,6 +23,7 @@ const SECTION_MAP = {
   SponsorshipTiers,
   ConfRetro,
   BulletSection,
+  YouTubeEmbed,
 } as const;
 
 export default function SectionRenderer({ section }: { section: SectionConfig }) {
