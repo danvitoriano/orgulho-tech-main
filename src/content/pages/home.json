@@ -28,16 +28,16 @@
       "type": "MeetupMainHero",
       "props": {
         "badge": "WOMAN & QUEER TECH",
-        "title": "Meetup Woman & Queer",
-        "description": "No mês internacional das mulheres, vamos reunir as comunidades Orgulho Tech, Devs 40+ e Elas Programam em São Paulo, com participação presencial na Blip. Dia 19/3 (quinta), a partir das 19h.",
+        "title": "Woman & Queer Tech — 2º meetup",
+        "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Até 120 pessoas, com café na entrada e na saída para networking. Orgulho Tech, Devs 40+ e Elas Programam — Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco.",
         "tags": [
-          "19/3 (quinta), a partir das 19h",
-          "Na Blip, em São Paulo"
+          "25/4/2026 · 10h–13h",
+          "UniBrad · Barra Funda, São Paulo"
         ],
         "ctas": [
           {
-            "href": "https://www.meetup.com/pt-br/orgulhotech/events/313611019/",
-            "text": "Confirmar presença",
+            "href": "https://link.orgulhotech.com.br/meetup",
+            "text": "Inscreva-se no evento (Luma)",
             "outline": false
           },
           {
@@ -47,9 +47,26 @@
           }
         ],
         "image": {
-          "src": "/women-queer-tech-hero.png",
-          "alt": "Meetup Woman and Queer"
-        }
+          "src": "/women-queer-tech-hero-2.avif",
+          "alt": "Meetup Woman and Queer Tech — 2º meetup"
+        },
+        "aside": [
+          {
+            "title": "1ª edição — Woman & Queer Tech",
+            "body": "A primeira edição reuniu Orgulho Tech, Devs 40+ e Elas Programam na Blip (Faria Lima), com palestras, debate aberto e até 60 pessoas — encontro noturno sobre trajetórias e resiliência na tecnologia.",
+            "link": { "href": "/meetup", "text": "Ver histórico do meetup" }
+          },
+          {
+            "title": "Orgulho Tech Conf 2024",
+            "body": "Foi a estreia da conferência de profissionais LGBTQ+ na tecnologia no Brasil: um dia inteiro em São Paulo (Liberdade), 1º de junho de 2024, com palestras, painéis e treinamentos.",
+            "link": { "href": "/conf", "text": "Conheça a Conf" }
+          },
+          {
+            "title": "Orgulho Tech Conf 2026",
+            "body": "A segunda edição acontece na quarta-feira à noite, 3 de junho de 2026 — véspera do feriado e da Parada do Orgulho LGBT+ de São Paulo.",
+            "link": { "href": "/conf", "text": "Detalhes e patrocínio" }
+          }
+        ]
       }
     },
     {

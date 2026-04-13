@@ -2,7 +2,7 @@
   "path": "/meetup",
   "metadata": {
     "title": "Meetup — Orgulho Tech",
-    "description": "Meetup Woman & Queer Tech — Reunimos as comunidades Orgulho Tech, Devs 40+ e Elas Programam. 19 de março, na Blip, São Paulo."
+    "description": "Woman & Queer Tech — 2º meetup: palestras sobre GitHub Copilot e IA. 25 de abril de 2026, 10h–13h, na Universidade Bradesco (Barra Funda), São Paulo."
   },
   "sections": [
     {
@@ -27,7 +27,47 @@
     {
       "type": "EventDetails",
       "props": {
-        "title": "Meetup Woman & Queer Tech",
+        "title": "Woman & Queer Tech — 2º meetup",
+        "image": "/women-queer-tech-hero-2.avif",
+        "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Espaço com capacidade para até 120 pessoas. Duas pausas para café — uma na entrada e outra na saída — para networking. Realização: comunidades Orgulho Tech, Devs 40+ e Elas Programam, com Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco.",
+        "program": [
+          { "time": "10h00", "title": "Abertura e café de entrada", "description": "Boas-vindas e networking" },
+          { "time": "10h30", "title": "Palestra", "description": "GitHub Copilot" },
+          { "time": "11h15", "title": "Palestra", "description": "Inteligência artificial" },
+          { "time": "12h00", "title": "Mais conteúdos", "description": "Novas palestras divulgadas em breve" },
+          { "time": "12h40", "title": "Encerramento e café de saída", "description": "Networking" }
+        ],
+        "location": {
+          "name": "Universidade Bradesco (UniBrad)",
+          "address": "Av. Marquês de São Vicente, 77 — Barra Funda, São Paulo — ao lado da estação Barra Funda (Metrô)",
+          "mapsUrl": "https://maps.google.com/?q=Av.+Marquês+de+São+Vicente,+77,+Várzea+da+Barra+Funda,+São+Paulo+-+SP"
+        },
+        "meta": [
+          "Inscrições abertas",
+          "25 de abril de 2026 · 10h às 13h",
+          "Até 120 pessoas",
+          "Duas pausas para café — entrada e saída"
+        ],
+        "ctas": [
+          {
+            "href": "https://link.orgulhotech.com.br/meetup",
+            "text": "Inscreva-se no evento (Luma)",
+            "outline": false
+          },
+          {
+            "href": "https://www.meetup.com/pt-br/orgulhotech/",
+            "text": "Entrar no grupo",
+            "outline": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "EventDetails",
+      "props": {
+        "sectionTitle": "Eventos anteriores",
+        "variant": "archive",
+        "title": "Meetup Woman & Queer Tech — 1ª edição",
         "image": "/women-queer-tech-hero.png",
         "description": "Reunimos as comunidades Orgulho Tech, Devs 40+ e Elas Programam para uma conversa honesta sobre trajetórias, desafios e resiliência na tecnologia.",
         "program": [
@@ -44,17 +84,12 @@
         },
         "meta": [
           "19 de março (quinta), 19h–21h",
-          "Vagas limitadas — 60 pessoas"
+          "Realizado na Blip — vagas limitadas (60 pessoas)"
         ],
         "ctas": [
           {
             "href": "https://www.meetup.com/pt-br/orgulhotech/events/313611019/",
-            "text": "Confirmar presença no Meetup",
-            "outline": false
-          },
-          {
-            "href": "https://www.meetup.com/pt-br/orgulhotech/",
-            "text": "Entrar no grupo",
+            "text": "Ver página do evento",
             "outline": true
           }
         ]

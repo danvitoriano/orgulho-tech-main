@@ -1,3 +1,9 @@
+export interface MeetupAsideBlock {
+  title: string;
+  body: string;
+  link?: { href: string; text: string };
+}
+
 export interface MeetupMainHeroProps {
   badge?: string;
   title?: string;
@@ -16,6 +22,7 @@ export interface MeetupMainHeroProps {
     src: string;
     alt: string;
   };
+  aside?: MeetupAsideBlock[];
 }
 
 export default function MeetupMainHero({
@@ -26,6 +33,7 @@ export default function MeetupMainHero({
   cta,
   ctas,
   image,
+  aside = [],
 }: MeetupMainHeroProps) {
   const allCtas = ctas ?? (cta ? [{ ...cta, outline: false }] : []);
   return (
@@ -62,17 +70,21 @@ export default function MeetupMainHero({
             )}
             {allCtas.length > 0 && (
               <div className="mt-8 flex flex-wrap gap-3">
-                {allCtas.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.href}
-                    className={item.outline ? "btn btn-outline btn-primary" : "btn btn-primary"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {item.text}
-                  </a>
-                ))}
+                {allCtas.map((item, index) => {
+                  const external = item.href.startsWith("http");
+                  return (
+                    <a
+                      key={index}
+                      href={item.href}
+                      className={item.outline ? "btn btn-outline btn-primary" : "btn btn-primary"}
+                      {...(external
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                    >
+                      {item.text}
+                    </a>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -88,6 +100,32 @@ export default function MeetupMainHero({
           )}
         </div>
       </div>
+      {aside.length > 0 && (
+        <div className="mt-8 rounded-2xl border border-black/10 bg-base-200/50 px-6 py-5 md:px-8 md:py-6">
+          <p className="text-xs font-bold tracking-widest text-primary uppercase mb-4">
+            Na comunidade
+          </p>
+          <ul className="space-y-5 text-sm text-base-content/80 leading-relaxed">
+            {aside.map((block) => (
+              <li key={block.title}>
+                <p className="font-semibold text-base-content">{block.title}</p>
+                <p className="mt-1">{block.body}</p>
+                {block.link && (
+                  <a
+                    href={block.link.href}
+                    className="mt-2 inline-block text-sm font-medium text-primary underline-offset-2 hover:underline"
+                    {...(block.link.href.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                  >
+                    {block.link.text}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </section>
   );
 }

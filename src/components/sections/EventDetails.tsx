@@ -26,6 +26,8 @@ export interface EventDetailsProps {
   location?: EventLocation;
   meta?: string[];
   ctas?: EventCTA[];
+  sectionTitle?: string;
+  variant?: "default" | "archive";
 }
 
 export default function EventDetails({
@@ -36,14 +38,19 @@ export default function EventDetails({
   location,
   meta = [],
   ctas = [],
+  sectionTitle,
+  variant = "default",
 }: EventDetailsProps) {
-  return (
-    <section className="lg:container md:max-w-6xl lg:mx-auto mx-4 py-16 lg:py-24">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+  const isArchive = variant === "archive";
+
+  const grid = (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left column */}
         <div>
           {image && (
-            <div className="rounded-2xl overflow-hidden mb-8">
+            <div
+              className={`rounded-2xl overflow-hidden mb-8 ${isArchive ? "opacity-90 max-w-xl" : ""}`}
+            >
               <Image
                 src={image}
                 alt={title ?? "Evento"}
@@ -57,7 +64,10 @@ export default function EventDetails({
           {meta.length > 0 && (
             <ul className="flex flex-col gap-1 mb-6">
               {meta.map((item) => (
-                <li key={item} className="text-sm font-medium text-primary">
+                <li
+                  key={item}
+                  className={`text-sm font-medium ${isArchive ? "text-base-content/70" : "text-primary"}`}
+                >
                   {item}
                 </li>
               ))}
@@ -65,11 +75,27 @@ export default function EventDetails({
           )}
 
           {title && (
-            <h2 className="text-3xl lg:text-4xl font-semibold mb-4">{title}</h2>
+            <h2
+              className={
+                isArchive
+                  ? "text-2xl lg:text-3xl font-semibold mb-4 text-base-content/90"
+                  : "text-3xl lg:text-4xl font-semibold mb-4"
+              }
+            >
+              {title}
+            </h2>
           )}
 
           {description && (
-            <p className="text-base lg:text-lg mb-8">{description}</p>
+            <p
+              className={
+                isArchive
+                  ? "text-base mb-8 text-base-content/80"
+                  : "text-base lg:text-lg mb-8"
+              }
+            >
+              {description}
+            </p>
           )}
 
           {ctas.length > 0 && (
@@ -115,7 +141,13 @@ export default function EventDetails({
           )}
 
           {location && (
-            <div className="rounded-2xl bg-base-200 p-6">
+            <div
+              className={
+                isArchive
+                  ? "rounded-2xl bg-base-100/80 border border-base-300 p-6"
+                  : "rounded-2xl bg-base-200 p-6"
+              }
+            >
               <h3 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">
                 Local
               </h3>
@@ -132,7 +164,23 @@ export default function EventDetails({
             </div>
           )}
         </div>
-      </div>
+        </div>
+  );
+
+  return (
+    <section className="lg:container md:max-w-6xl lg:mx-auto mx-4 py-16 lg:py-24">
+      {sectionTitle && (
+        <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-8">
+          {sectionTitle}
+        </h2>
+      )}
+      {isArchive ? (
+        <div className="rounded-2xl border border-base-300 bg-base-200/70 p-6 md:p-8 lg:p-10">
+          {grid}
+        </div>
+      ) : (
+        grid
+      )}
     </section>
   );
 }
