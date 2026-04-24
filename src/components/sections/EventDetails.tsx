@@ -28,6 +28,7 @@ export interface EventDetailsProps {
   ctas?: EventCTA[];
   sectionTitle?: string;
   variant?: "default" | "archive";
+  statusBadge?: string;
 }
 
 export default function EventDetails({
@@ -40,8 +41,10 @@ export default function EventDetails({
   ctas = [],
   sectionTitle,
   variant = "default",
+  statusBadge,
 }: EventDetailsProps) {
   const isArchive = variant === "archive";
+  const showStatusBadge = statusBadge && !isArchive;
 
   const grid = (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -58,6 +61,12 @@ export default function EventDetails({
                 height={400}
                 className="w-full object-cover"
               />
+            </div>
+          )}
+
+          {showStatusBadge && (
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-500/50 bg-amber-100/90 px-3 py-1 text-xs font-semibold tracking-wide text-amber-950">
+              {statusBadge}
             </div>
           )}
 

@@ -23,6 +23,7 @@ export interface MeetupMainHeroProps {
     alt: string;
   };
   aside?: MeetupAsideBlock[];
+  statusBadge?: string;
 }
 
 export default function MeetupMainHero({
@@ -34,6 +35,7 @@ export default function MeetupMainHero({
   ctas,
   image,
   aside = [],
+  statusBadge,
 }: MeetupMainHeroProps) {
   const allCtas = ctas ?? (cta ? [{ ...cta, outline: false }] : []);
   return (
@@ -41,9 +43,18 @@ export default function MeetupMainHero({
       <div className="rounded-[2rem] overflow-hidden border border-secondary bg-[#fff7eb]">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="p-7 md:p-10 lg:p-12">
-            {badge && (
-              <div className="inline-flex items-center gap-2 rounded-full border border-black/20 px-4 py-1 text-xs tracking-wide">
-                {badge}
+            {(badge || statusBadge) && (
+              <div className="flex flex-wrap items-center gap-2">
+                {badge && (
+                  <div className="inline-flex items-center gap-2 rounded-full border border-black/20 px-4 py-1 text-xs tracking-wide">
+                    {badge}
+                  </div>
+                )}
+                {statusBadge && (
+                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/50 bg-amber-100/90 px-4 py-1 text-xs font-semibold tracking-wide text-amber-950">
+                    {statusBadge}
+                  </div>
+                )}
               </div>
             )}
             {title && (

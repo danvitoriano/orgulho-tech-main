@@ -2,7 +2,7 @@
   "path": "/meetup",
   "metadata": {
     "title": "Meetup — Orgulho Tech",
-    "description": "Woman & Queer Tech — 2º meetup: palestras sobre GitHub Copilot e IA. 25 de abril de 2026, 10h–13h, na Universidade Bradesco (Barra Funda), São Paulo."
+    "description": "Woman & Queer Tech — 2º meetup: palestras sobre GitHub Copilot e IA. 9 de maio de 2026, 10h–13h, na Universidade Bradesco (Barra Funda), São Paulo."
   },
   "sections": [
     {
@@ -27,14 +27,16 @@
     {
       "type": "EventDetails",
       "props": {
+        "statusBadge": "Reagendado",
         "title": "Woman & Queer Tech — 2º meetup",
         "image": "/women-queer-tech-hero-2.avif",
-        "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Espaço com capacidade para até 120 pessoas. Duas pausas para café — uma na entrada e outra na saída — para networking. Realização: comunidades Orgulho Tech, Devs 40+ e Elas Programam, com Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco.",
+        "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Espaço com capacidade para até 120 pessoas. Duas pausas para café — uma na entrada e outra na saída — para networking. Realização: comunidades Orgulho Tech, Devs 40+ e Elas Programam, com Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco. Aproveitamos também para anunciar mais uma talk na grade do evento, com o tema de \"IA e Ética\", que será apresentada por Beatriz Leal, líder de projetos na Cognizant, onde atua em iniciativas de negócio e no desenvolvimento de soluções envolvendo Inteligência Artificial em contextos corporativos.",
         "program": [
           { "time": "10h00", "title": "Abertura e café de entrada", "description": "Boas-vindas e networking" },
-          { "time": "10h30", "title": "Palestra", "description": "GitHub Copilot" },
-          { "time": "11h15", "title": "Palestra", "description": "Inteligência artificial" },
-          { "time": "12h00", "title": "Mais conteúdos", "description": "Novas palestras divulgadas em breve" },
+          { "time": "10h30", "title": "Palestra — IA e Ética", "description": "Beatriz Leal, líder de projetos na Cognizant — atua em iniciativas de negócio e no desenvolvimento de soluções envolvendo Inteligência Artificial em contextos corporativos." },
+          { "time": "11h10", "title": "Palestra", "description": "GitHub Copilot" },
+          { "time": "11h45", "title": "Palestra", "description": "Inteligência artificial" },
+          { "time": "12h20", "title": "Perguntas, debate e networking", "description": "Com a plateia" },
           { "time": "12h40", "title": "Encerramento e café de saída", "description": "Networking" }
         ],
         "location": {
@@ -44,7 +46,7 @@
         },
         "meta": [
           "Inscrições abertas",
-          "25 de abril de 2026 · 10h às 13h",
+          "9 de maio de 2026 · 10h às 13h",
           "Até 120 pessoas",
           "Duas pausas para café — entrada e saída"
         ],
