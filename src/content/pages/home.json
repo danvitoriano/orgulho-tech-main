@@ -47,6 +47,10 @@
             "outline": true
           }
         ],
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10313/9652330f-e3cb-45f3-9f73-a3d2308367b8",
+          "alt": "Orgulho Tech Conf — palestrantes no palco em São Paulo"
+        },
         "aside": [
           {
             "title": "Woman & Queer Tech — 2ª edição",
