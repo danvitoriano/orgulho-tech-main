@@ -39,13 +39,12 @@
       "props": {
         "badge": "Próxima edição",
         "meta": [
-          "📅 Quarta-feira, 3 de junho de 2026",
+          "📅 Data a confirmar",
           "📍 São Paulo, SP (local a confirmar)",
-          "👥 300 a 400 pessoas esperadas",
-          "🏳️‍🌈 Véspera da Parada do Orgulho LGBT+ de SP"
+          "👥 300 a 400 pessoas esperadas"
         ],
         "title": "Edição 2026",
-        "description": "A segunda edição do Orgulho Tech Conf acontece na véspera do feriado e da maior Parada do Orgulho LGBT+ do mundo. Seja patrocinador e posicione sua marca ao lado da comunidade tech LGBTQ+ do Brasil.",
+        "description": "A segunda edição do Orgulho Tech Conf reúne a comunidade tech LGBTQ+ em São Paulo. Seja patrocinador e posicione sua marca ao lado de profissionais, líderes e talentos da diversidade na tecnologia.",
         "ctas": [
           {
             "href": "mailto:contato@orgulhotech.com.br",
