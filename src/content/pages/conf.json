@@ -15,7 +15,7 @@
         "navigation": {
           "links": [
             { "label": "Sobre", "url": "/sobre" },
-            { "label": "Meetup", "url": "/meetup" },
+            { "label": "Woman & Queer Tech", "url": "/woman-queer-tech" },
             { "label": "Podcast", "url": "/podcast" },
             { "label": "Conf", "url": "/conf" },
             { "label": "GitHub", "url": "/github" }
@@ -235,7 +235,7 @@
           {
             "title": "Conheça mais",
             "items": [
-              { "label": "Meetup", "href": "https://www.meetup.com/pt-BR/orgulhotech" },
+              { "label": "Woman & Queer Tech", "href": "/woman-queer-tech" },
               { "label": "Podcast Tech 40+", "href": "https://www.youtube.com/playlist?list=PLndJnupfcnxE4dErxRpXICLXQ2Xz5UduD" },
               { "label": "Dan Vitoriano", "href": "https://www.danvitoriano.com.br/" }
             ]

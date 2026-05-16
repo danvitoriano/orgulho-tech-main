@@ -1,7 +1,7 @@
 import conf from "@/content/pages/conf.json";
 import github from "@/content/pages/github.json";
 import home from "@/content/pages/home.json";
-import meetup from "@/content/pages/meetup.json";
+import womanQueerTech from "@/content/pages/woman-queer-tech.json";
 import podcast from "@/content/pages/podcast.json";
 import sobre from "@/content/pages/sobre.json";
 
@@ -26,7 +26,7 @@ export type PageConfig = {
 const pages: PageConfig[] = [
   home as PageConfig,
   sobre as PageConfig,
-  meetup as PageConfig,
+  womanQueerTech as PageConfig,
   podcast as PageConfig,
   conf as PageConfig,
   github as PageConfig,

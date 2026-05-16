@@ -2,7 +2,7 @@
   "path": "/",
   "metadata": {
     "title": "Orgulho Tech — Comunidade LGBT+ na Tecnologia",
-    "description": "Comunidade que celebra a diversidade na tecnologia, com meetups, podcast e a Orgulho Tech Conf — a maior conferência LGBTQ+ na tecnologia do Brasil."
+    "description": "Comunidade que celebra a diversidade na tecnologia, com Woman & Queer Tech, podcast e a Orgulho Tech Conf — a maior conferência LGBTQ+ na tecnologia do Brasil."
   },
   "sections": [
     {
@@ -15,7 +15,7 @@
         "navigation": {
           "links": [
             { "label": "Sobre", "url": "/sobre" },
-            { "label": "Meetup", "url": "/meetup" },
+            { "label": "Woman & Queer Tech", "url": "/woman-queer-tech" },
             { "label": "Podcast", "url": "/podcast" },
             { "label": "Conf", "url": "/conf" },
             { "label": "GitHub", "url": "/github" }
@@ -49,14 +49,14 @@
         ],
         "aside": [
           {
-            "title": "Woman & Queer Tech — 2º meetup",
+            "title": "Woman & Queer Tech — 2ª edição",
             "body": "Segundo encontro com palestras sobre GitHub Copilot, inteligência artificial e IA e ética. Realização Orgulho Tech, Devs 40+ e Elas Programam, com apoio Bradesco, na Universidade Bradesco (Barra Funda).",
-            "link": { "href": "/meetup", "text": "Ver histórico do meetup" }
+            "link": { "href": "/woman-queer-tech", "text": "Ver histórico" }
           },
           {
-            "title": "1ª edição — Woman & Queer Tech",
+            "title": "Woman & Queer Tech — 1ª edição",
             "body": "A primeira edição reuniu Orgulho Tech, Devs 40+ e Elas Programam na Blip (Faria Lima), com palestras, debate aberto e até 60 pessoas — encontro noturno sobre trajetórias e resiliência na tecnologia.",
-            "link": { "href": "/meetup", "text": "Ver histórico do meetup" }
+            "link": { "href": "/woman-queer-tech", "text": "Ver histórico" }
           },
           {
             "title": "Orgulho Tech Conf 2024",
@@ -70,13 +70,13 @@
       "type": "Hero",
       "props": {
         "title": "<p><strong>Envelhecer LGBT+ na Tecnologia</strong></p>",
-        "description": "Em plena Semana da Parada SP, realizamos o Meetup Orgulho Tech 2025 na FIAP, com o tema \"Envelhecer LGBT+ na Tecnologia\". Reunimos painelistas incríveis, premiamos comunidades inspiradoras e celebramos a diversidade que move a tecnologia.",
+        "description": "Em plena Semana da Parada SP, realizamos um encontro Orgulho Tech 2025 na FIAP, com o tema \"Envelhecer LGBT+ na Tecnologia\". Reunimos painelistas incríveis, premiamos comunidades inspiradoras e celebramos a diversidade que move a tecnologia.",
         "image": "https://assets.decocache.com/orgulho-tech/2603afca-f2ea-49bf-9d84-045e2dc7b05e/Screenshot-2025-06-19-at-15.20.24.png",
         "placement": "left",
         "titleSize": "heading",
         "cta": [
           {
-            "id": "meetup-video",
+            "id": "encontro-video",
             "href": "https://youtu.be/BbAVhm59g3g",
             "text": "Assista como foi no YouTube",
             "outline": false
@@ -131,7 +131,7 @@
           {
             "title": "Conheça mais",
             "items": [
-              { "label": "Meetup", "href": "https://www.meetup.com/pt-BR/orgulhotech" },
+              { "label": "Woman & Queer Tech", "href": "/woman-queer-tech" },
               { "label": "Podcast Tech 40+", "href": "https://www.youtube.com/playlist?list=PLndJnupfcnxE4dErxRpXICLXQ2Xz5UduD" },
               { "label": "Dan Vitoriano", "href": "https://www.danvitoriano.com.br/" }
             ]

@@ -29,7 +29,7 @@ export default function Header({
   navigation = {
     links: [
       { label: "Sobre", url: "/sobre" },
-      { label: "Meetup", url: "/meetup" },
+      { label: "Woman & Queer Tech", url: "/woman-queer-tech" },
       { label: "Podcast", url: "/podcast" },
       { label: "Conf", url: "/conf" },
       { label: "GitHub", url: "/github" },

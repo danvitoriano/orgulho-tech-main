@@ -1,8 +1,8 @@
 {
-  "path": "/meetup",
+  "path": "/woman-queer-tech",
   "metadata": {
-    "title": "Meetup — Orgulho Tech",
-    "description": "Histórico dos meetups Orgulho Tech e parcerias Woman & Queer Tech. O próximo grande evento da comunidade é a Orgulho Tech Conf."
+    "title": "Woman & Queer Tech — Orgulho Tech",
+    "description": "Histórico dos encontros Woman & Queer Tech em parceria com Orgulho Tech, Devs 40+ e Elas Programam. O próximo grande evento da comunidade é a Orgulho Tech Conf."
   },
   "sections": [
     {
@@ -15,7 +15,7 @@
         "navigation": {
           "links": [
             { "label": "Sobre", "url": "/sobre" },
-            { "label": "Meetup", "url": "/meetup" },
+            { "label": "Woman & Queer Tech", "url": "/woman-queer-tech" },
             { "label": "Podcast", "url": "/podcast" },
             { "label": "Conf", "url": "/conf" },
             { "label": "GitHub", "url": "/github" }
@@ -52,7 +52,7 @@
       "props": {
         "sectionTitle": "Eventos anteriores",
         "variant": "archive",
-        "title": "Woman & Queer Tech — 2º meetup",
+        "title": "Woman & Queer Tech — 2ª edição",
         "image": "/women-queer-tech-hero-2.avif",
         "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Espaço com capacidade para até 120 pessoas. Duas pausas para café — uma na entrada e outra na saída — para networking. Realização: comunidades Orgulho Tech, Devs 40+ e Elas Programam, com Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco. Talk sobre \"IA e Ética\" com Beatriz Leal, líder de projetos na Cognizant.",
         "program": [
@@ -72,13 +72,6 @@
           "9 de maio de 2026 · 10h às 13h",
           "Até 120 pessoas",
           "Realizado na Universidade Bradesco (Barra Funda)"
-        ],
-        "ctas": [
-          {
-            "href": "https://www.meetup.com/pt-br/orgulhotech/",
-            "text": "Entrar no grupo",
-            "outline": true
-          }
         ]
       }
     },
@@ -86,7 +79,7 @@
       "type": "EventDetails",
       "props": {
         "variant": "archive",
-        "title": "Meetup Woman & Queer Tech — 1ª edição",
+        "title": "Woman & Queer Tech — 1ª edição",
         "image": "/women-queer-tech-hero.png",
         "description": "Reunimos as comunidades Orgulho Tech, Devs 40+ e Elas Programam para uma conversa honesta sobre trajetórias, desafios e resiliência na tecnologia.",
         "program": [
@@ -104,13 +97,6 @@
         "meta": [
           "19 de março (quinta), 19h–21h",
           "Realizado na Blip — vagas limitadas (60 pessoas)"
-        ],
-        "ctas": [
-          {
-            "href": "https://www.meetup.com/pt-br/orgulhotech/events/313611019/",
-            "text": "Ver página do evento",
-            "outline": true
-          }
         ]
       }
     },
@@ -160,7 +146,7 @@
           {
             "title": "Conheça mais",
             "items": [
-              { "label": "Meetup", "href": "https://www.meetup.com/pt-BR/orgulhotech" },
+              { "label": "Woman & Queer Tech", "href": "/woman-queer-tech" },
               { "label": "Podcast Tech 40+", "href": "https://www.youtube.com/playlist?list=PLndJnupfcnxE4dErxRpXICLXQ2Xz5UduD" },
               { "label": "Dan Vitoriano", "href": "https://www.danvitoriano.com.br/" }
             ]
