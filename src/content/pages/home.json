@@ -2,7 +2,7 @@
   "path": "/",
   "metadata": {
     "title": "Orgulho Tech — Comunidade LGBT+ na Tecnologia",
-    "description": "Comunidade que celebra a diversidade na tecnologia, com meetups, podcast e conferência para pessoas LGBT+ e aliadas."
+    "description": "Comunidade que celebra a diversidade na tecnologia, com meetups, podcast e a Orgulho Tech Conf — a maior conferência LGBTQ+ na tecnologia do Brasil."
   },
   "sections": [
     {
@@ -27,35 +27,31 @@
     {
       "type": "MeetupMainHero",
       "props": {
-        "badge": "WOMAN & QUEER TECH",
-        "statusBadge": "Reagendado",
-        "title": "Woman & Queer Tech — 2º meetup",
-        "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Até 120 pessoas, com café na entrada e na saída para networking. Orgulho Tech, Devs 40+ e Elas Programam — Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco.",
+        "badge": "ORGULHO TECH CONF",
+        "statusBadge": "Próximo evento",
+        "title": "Orgulho Tech Conf",
+        "description": "A maior conferência de profissionais LGBTQ+ na tecnologia no Brasil. Palestras, painéis e networking em um espaço seguro para compartilhar experiências, inspirar trajetórias e impulsionar a presença da comunidade tech.",
         "tags": [
-          "9/5/2026 · 10h–13h",
-          "UniBrad · Barra Funda, São Paulo"
+          "São Paulo, SP",
+          "300 a 400 pessoas esperadas"
         ],
         "ctas": [
           {
-            "href": "https://link.orgulhotech.com.br/meetup",
-            "text": "Inscreva-se no evento (Luma)",
+            "href": "/conf",
+            "text": "Detalhes e patrocínio",
             "outline": false
           },
           {
-            "href": "/meetup",
-            "text": "Saiba mais",
+            "href": "https://www.instagram.com/orgulhotech",
+            "text": "Fique por dentro",
             "outline": true
           }
         ],
-        "image": {
-          "src": "/women-queer-tech-hero-2.avif",
-          "alt": "Meetup Woman and Queer Tech — 2º meetup"
-        },
         "aside": [
           {
-            "title": "Orgulho Tech Conf 2026",
-            "body": "A segunda edição acontece na quarta-feira à noite, 3 de junho de 2026 — véspera do feriado e da Parada do Orgulho LGBT+ de São Paulo.",
-            "link": { "href": "/conf", "text": "Detalhes e patrocínio" }
+            "title": "Woman & Queer Tech — 2º meetup",
+            "body": "Segundo encontro com palestras sobre GitHub Copilot, inteligência artificial e IA e ética. Realização Orgulho Tech, Devs 40+ e Elas Programam, com apoio Bradesco, na Universidade Bradesco (Barra Funda).",
+            "link": { "href": "/meetup", "text": "Ver histórico do meetup" }
           },
           {
             "title": "1ª edição — Woman & Queer Tech",

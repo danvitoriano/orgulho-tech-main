@@ -2,7 +2,7 @@
   "path": "/meetup",
   "metadata": {
     "title": "Meetup — Orgulho Tech",
-    "description": "Woman & Queer Tech — 2º meetup: palestras sobre GitHub Copilot e IA. 9 de maio de 2026, 10h–13h, na Universidade Bradesco (Barra Funda), São Paulo."
+    "description": "Histórico dos meetups Orgulho Tech e parcerias Woman & Queer Tech. O próximo grande evento da comunidade é a Orgulho Tech Conf."
   },
   "sections": [
     {
@@ -25,15 +25,39 @@
       }
     },
     {
+      "type": "Hero",
+      "props": {
+        "title": "<p><strong>Próximo evento: Orgulho Tech Conf</strong></p>",
+        "description": "A maior conferência de profissionais LGBTQ+ na tecnologia no Brasil. Palestras, painéis e networking em São Paulo — saiba como participar ou patrocinar a próxima edição.",
+        "placement": "left",
+        "titleSize": "heading",
+        "cta": [
+          {
+            "id": "conf-details",
+            "href": "/conf",
+            "text": "Detalhes e patrocínio",
+            "outline": false
+          },
+          {
+            "id": "conf-instagram",
+            "href": "https://www.instagram.com/orgulhotech",
+            "text": "Fique por dentro",
+            "outline": true
+          }
+        ]
+      }
+    },
+    {
       "type": "EventDetails",
       "props": {
-        "statusBadge": "Reagendado",
+        "sectionTitle": "Eventos anteriores",
+        "variant": "archive",
         "title": "Woman & Queer Tech — 2º meetup",
         "image": "/women-queer-tech-hero-2.avif",
-        "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Espaço com capacidade para até 120 pessoas. Duas pausas para café — uma na entrada e outra na saída — para networking. Realização: comunidades Orgulho Tech, Devs 40+ e Elas Programam, com Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco. Aproveitamos também para anunciar mais uma talk na grade do evento, com o tema de \"IA e Ética\", que será apresentada por Beatriz Leal, líder de projetos na Cognizant, onde atua em iniciativas de negócio e no desenvolvimento de soluções envolvendo Inteligência Artificial em contextos corporativos.",
+        "description": "Segundo encontro Woman & Queer Tech, com palestras sobre GitHub Copilot e inteligência artificial. Espaço com capacidade para até 120 pessoas. Duas pausas para café — uma na entrada e outra na saída — para networking. Realização: comunidades Orgulho Tech, Devs 40+ e Elas Programam, com Dan Vitoriano, Silvia Coelho e Roberson Miguel; apoio Bradesco. Talk sobre \"IA e Ética\" com Beatriz Leal, líder de projetos na Cognizant.",
         "program": [
           { "time": "10h00", "title": "Abertura e café de entrada", "description": "Boas-vindas e networking" },
-          { "time": "10h30", "title": "Palestra — IA e Ética", "description": "Beatriz Leal, líder de projetos na Cognizant — atua em iniciativas de negócio e no desenvolvimento de soluções envolvendo Inteligência Artificial em contextos corporativos." },
+          { "time": "10h30", "title": "Palestra — IA e Ética", "description": "Beatriz Leal, líder de projetos na Cognizant" },
           { "time": "11h10", "title": "Palestra", "description": "GitHub Copilot" },
           { "time": "11h45", "title": "Palestra", "description": "Inteligência artificial" },
           { "time": "12h20", "title": "Perguntas, debate e networking", "description": "Com a plateia" },
@@ -45,17 +69,11 @@
           "mapsUrl": "https://maps.google.com/?q=Av.+Marquês+de+São+Vicente,+77,+Várzea+da+Barra+Funda,+São+Paulo+-+SP"
         },
         "meta": [
-          "Inscrições abertas",
           "9 de maio de 2026 · 10h às 13h",
           "Até 120 pessoas",
-          "Duas pausas para café — entrada e saída"
+          "Realizado na Universidade Bradesco (Barra Funda)"
         ],
         "ctas": [
-          {
-            "href": "https://link.orgulhotech.com.br/meetup",
-            "text": "Inscreva-se no evento (Luma)",
-            "outline": false
-          },
           {
             "href": "https://www.meetup.com/pt-br/orgulhotech/",
             "text": "Entrar no grupo",
@@ -67,7 +85,6 @@
     {
       "type": "EventDetails",
       "props": {
-        "sectionTitle": "Eventos anteriores",
         "variant": "archive",
         "title": "Meetup Woman & Queer Tech — 1ª edição",
         "image": "/women-queer-tech-hero.png",
